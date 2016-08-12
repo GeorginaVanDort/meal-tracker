@@ -24,8 +24,8 @@ export class AppComponent {
   constructor(){
     this.meals = [
       new Meal("Green Salad", "Boring!", 300),
-      new Meal("Oatmeal", "Extra coconut makes it delicious!", 1500),
-      new Meal("Pizza", "Extra anchovies", 800),
+      new Meal("Oatmeal", "Extra coconut makes it delicious!", 800),
+      new Meal("Pizza", "Extra anchovies", 2200),
     ];
   }
 editMeal(clickedMeal:Meal): void {
