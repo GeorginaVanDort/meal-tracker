@@ -5,8 +5,8 @@ import { Meal } from './meal.model';
   selector: 'new-meal',
   outputs: ['onAddNewMeal'],
   template:`
-  <div class="container"  id="anotherMeal">
-    <h3> Add Another Meal </h3>
+  <div class="container">
+    <h3 id="anotherMeal"> Add Another Meal </h3>
   </div>
 
   <form class="form-inline">

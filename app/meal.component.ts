@@ -5,9 +5,9 @@ import { Meal } from './meal.model'
   selector:'meal-display',
   inputs:['meal'],
   template:`
-  <div class="container" id="mealList">
+  <div class="container">
     <ul>
-      <li><h4> {{meal.name}} </h4></li>
+      <li id="mealList" > {{meal.name}} </li>
     </ul>
   </div>
   `

@@ -1,14 +1,6 @@
 h1 {
   color: orange;
-}
-
-.selected {
-  color: #22bdf0;
-}
-
-.task-form {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  font-weight: lighter;
 }
 
 .add-button {
@@ -18,13 +10,11 @@ h1 {
   padding-bottom: 8px;
 }
 
-#mealList {
-  padding-top: 10px;
-  color:#337ab7;
-}
 
 #anotherMeal {
   color: orange;
+  font-weight: lighter;
+
 }
 
 .form-control-group {
@@ -32,7 +22,9 @@ h1 {
 }
 
 label {
-  color:#337ab7;
+  color:orange;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
 #note {
@@ -41,4 +33,12 @@ font-style: italic;
 
 #note2 {
 font-style: italic;
+}
+
+#mealList {
+  padding-top: 10px;
+  color:#337ab7;
+  font-weight: lighter;
+  font-size: 18px;
+
 }
