@@ -16,12 +16,14 @@ export class CheckCaloriePipe implements PipeTransform {
           calorieResult.push(input[i]);
         }
       }
+      return calorieResult;
     } else if (caloriesToCheck === "low-cal-food"){
       for (var i = 0; i < input.length; i++) {
         if (input[i].calories < 500) {
           calorieResult.push(input[i]);
         }
       }
+      return calorieResult;
     } else {
       return input;
     }
