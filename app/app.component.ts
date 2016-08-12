@@ -9,8 +9,10 @@ import { MealListComponent} from './meal-list.component';
   template: `
     <div class="container">
     <h1>Meal and Calorie Tracker.</h1>
-    <meal-list [mealList]="meals"
-    (onMealClick)="editMeal($event)"></meal-list>
+    <div class="container">
+      <meal-list [mealList]="meals"
+      (onMealClick)="editMeal($event)"></meal-list>
+    </div>
     </div>
     `
 })

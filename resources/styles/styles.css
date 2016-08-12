@@ -17,3 +17,28 @@ h1 {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+#mealList {
+  padding-top: 10px;
+  color:#337ab7;
+}
+
+#anotherMeal {
+  color: orange;
+}
+
+.form-control-group {
+  padding: 10px;
+}
+
+label {
+  color:#337ab7;
+}
+
+#note {
+font-style: italic;
+}
+
+#note2 {
+font-style: italic;
+}

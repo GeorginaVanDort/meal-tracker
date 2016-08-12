@@ -14,7 +14,7 @@ import { CheckCaloriePipe } from './check-calories.pipe';
   pipes:[CheckCaloriePipe],
   outputs:['onMealClick'],
   template:`
-  <select (change)="onChange($event.target.value)">
+  <select (change)="onChange($event.target.value)" class="form-control">
     <option value="all"  selected="selected" >Show All Meals</option>
     <option value="high-cal-food">Show High Calorie Food</option>
     <option value="low-cal-food">Show Low Calorie Food</option>
@@ -25,6 +25,7 @@ import { CheckCaloriePipe } from './check-calories.pipe';
   [class.selected]="currentMeal === selectedMeal"
   [meal]="currentMeal">
   </meal-display>
+  <div class="container"><p id="note">*Click a meal to see and edit details</p></div>
   <edit-meal *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal>
   <new-meal (onAddNewMeal)="createMeal($event)"></new-meal>
   `
