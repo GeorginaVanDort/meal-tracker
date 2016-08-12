@@ -1,4 +1,4 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core'
 import { Meal } from './meal.model';
 
 @Component ({
@@ -19,6 +19,7 @@ export class NewMealComponent {
     this.onAddNewMeal= new EventEmitter();
   }
   newMeal(addName: HTMLInputElement, addDetails: HTMLInputElement, addCalories: HTMLInputElement){
+    this.onAddNewMeal.emit([addName.value, addDetails.value, addCalories.value]);
     addName.value="";
     addDetails.value="";
     addCalories.value="";

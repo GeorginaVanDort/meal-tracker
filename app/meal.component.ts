@@ -1,5 +1,5 @@
 import { Component } from 'angular2/core'
-import { meal } from './meal.model'
+import { Meal } from './meal.model'
 
 @Component({
   selector:'meal-display',
@@ -9,6 +9,6 @@ import { meal } from './meal.model'
   `
 })
 
-export class MealComponent {
-  public meal: Meal;
+export class MealComponent{
+ public meal: Meal;
 }

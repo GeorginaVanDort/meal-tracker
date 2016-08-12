@@ -1,5 +1,5 @@
 import { Component } from 'angular2/core';
-import { Meal } from './meal.component'
+import { Meal } from './meal.model'
 
 @Component({
   selector:'edit-meal',
